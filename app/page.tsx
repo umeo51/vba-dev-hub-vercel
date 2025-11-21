@@ -94,15 +94,17 @@ export default function Home() {
               </CardHeader>
             </Card>
 
-            <Card>
-              <CardHeader>
-                <AlertCircle className="w-10 h-10 text-primary mb-4" />
-                <CardTitle>エラー辞典</CardTitle>
-                <CardDescription>
-                  VBAでよく遭遇するエラーの原因と解決策を網羅的に解説。エラーメッセージやエラー番号で検索して、すぐに対処法を見つけられます。
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/errors">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <CardHeader>
+                  <AlertCircle className="w-10 h-10 text-primary mb-4" />
+                  <CardTitle>エラー辞典</CardTitle>
+                  <CardDescription>
+                    VBAでよく遭遇するエラーの原因と解決策を網羅的に解説。エラーメッセージやエラー番号で検索して、すぐに対処法を見つけられます。
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
             <Card>
               <CardHeader>

@@ -118,15 +118,17 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Card>
-              <CardHeader>
-                <TrendingUp className="w-10 h-10 text-primary mb-4" />
-                <CardTitle>クイズ・学習</CardTitle>
-                <CardDescription>
-                  VBAの知識を定着させるためのクイズや練習問題を提供。自分のスキルレベルをチェックして、さらなる成長を目指しましょう。
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/quiz">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <CardHeader>
+                  <TrendingUp className="w-10 h-10 text-primary mb-4" />
+                  <CardTitle>クイズ・学習</CardTitle>
+                  <CardDescription>
+                    VBAの知識を定着させるためのクイズや練習問題を提供。自分のスキルレベルをチェックして、さらなる成長を目指しましょう。
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>

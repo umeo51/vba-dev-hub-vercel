@@ -8,6 +8,13 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "VBA Dev Hub - VBA開発をもっと効率的に",
   description: "VBA開発者のための統合支援プラットフォーム。コード生成、スニペット共有、エラー解決、学習まで、すべてがここに揃っています。",
+  keywords: "VBA, Excel, マクロ, プログラミング, コード生成, スニペット, エラー辞典, リファレンス, クイズ, UserForm",
+  authors: [{ name: "VBA Dev Hub" }],
+  openGraph: {
+    title: "VBA Dev Hub - VBA開発をもっと効率的に",
+    description: "VBA開発者のための統合支援プラットフォーム",
+    type: "website",
+  },
 };
 
 export default function RootLayout({
@@ -17,6 +24,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ja">
+      <head>
+        {/* Google AdSense */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX"
+          crossOrigin="anonymous"
+        />
+      </head>
       <body className={inter.className}>
         {children}
         <Toaster />

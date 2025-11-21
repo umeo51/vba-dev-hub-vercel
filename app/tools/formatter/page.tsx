@@ -22,7 +22,7 @@ export default function FormatterPage() {
     let indentLevel = 0;
     const formatted: string[] = [];
 
-    for (let line of lines) {
+    for (const line of lines) {
       const trimmed = line.trim();
       
       if (!trimmed || trimmed.startsWith("'")) {

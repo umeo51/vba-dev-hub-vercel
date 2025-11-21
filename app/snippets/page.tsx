@@ -68,7 +68,9 @@ export default function SnippetsPage() {
   const categories = ['all', ...Array.from(new Set(snippets.map(s => s.category)))];
 
   return (
+    <>
       <Header />
+
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8">
@@ -145,5 +147,6 @@ export default function SnippetsPage() {
         </div>
       </div>
     </div>
+      </>
   );
 }

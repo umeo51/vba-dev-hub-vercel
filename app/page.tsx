@@ -10,7 +10,9 @@ import { Code, BookOpen, AlertCircle, Lightbulb, Users, TrendingUp } from 'lucid
 
 export default function Home() {
   return (
+    <>
       <Header />
+
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-primary/10 to-background py-20">
@@ -170,5 +172,6 @@ export default function Home() {
         </div>
       </footer>
     </div>
+      </>
   );
 }

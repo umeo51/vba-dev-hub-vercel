@@ -106,15 +106,17 @@ export default function Home() {
               </Card>
             </Link>
 
-            <Card>
-              <CardHeader>
-                <Lightbulb className="w-10 h-10 text-primary mb-4" />
-                <CardTitle>リファレンス</CardTitle>
-                <CardDescription>
-                  VBAの関数、ステートメント、オブジェクトについて、シンタックスやサンプルコード付きで詳しく解説します。
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/references">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <CardHeader>
+                  <Lightbulb className="w-10 h-10 text-primary mb-4" />
+                  <CardTitle>リファレンス</CardTitle>
+                  <CardDescription>
+                    VBAの関数、ステートメント、オブジェクトについて、シンタックスやサンプルコード付きで詳しく解説します。
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
             <Card>
               <CardHeader>

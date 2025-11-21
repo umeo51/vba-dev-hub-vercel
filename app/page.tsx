@@ -1,3 +1,6 @@
+'use client';
+import Header from '@/components/Header';
+
 export const dynamic = 'force-dynamic';
 
 import Link from 'next/link';
@@ -7,6 +10,7 @@ import { Code, BookOpen, AlertCircle, Lightbulb, Users, TrendingUp } from 'lucid
 
 export default function Home() {
   return (
+      <Header />
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="bg-gradient-to-b from-primary/10 to-background py-20">

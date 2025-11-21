@@ -1,4 +1,5 @@
 'use client';
+import Header from '@/components/Header';
 export const dynamic = 'force-dynamic';
 
 import { useEffect, useState } from 'react';
@@ -67,6 +68,7 @@ export default function SnippetsPage() {
   const categories = ['all', ...Array.from(new Set(snippets.map(s => s.category)))];
 
   return (
+      <Header />
     <div className="min-h-screen bg-gray-50 py-12">
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8">

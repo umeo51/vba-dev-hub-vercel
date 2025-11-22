@@ -10,7 +10,7 @@ export const metadata = {
 export default function ContactPage() {
   // TODO: Googleフォームを作成後、以下のURLを実際のGoogleフォーム埋め込みURLに置き換えてください
   // Googleフォームの「送信」→「<>」（埋め込み）タブからiframe URLを取得できます
-  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/YOUR_FORM_ID/viewform?embedded=true";
+  const GOOGLE_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLSfwsCoD7XfuSbChJJtmPuTZ1H_g4CiVlqNuUTt6l8d4Hk1L0g/viewform?embedded=true";
   
   return (
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-blue-50">

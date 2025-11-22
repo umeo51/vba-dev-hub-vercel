@@ -166,9 +166,12 @@ export default function Home() {
               </ul>
             </div>
             <div>
-              <h4 className="font-semibold mb-4">リンク</h4>
+              <h4 className="font-semibold mb-4">サイト情報</h4>
               <ul className="space-y-2 text-sm text-muted-foreground">
-                <li><Link href="https://github.com/umeo51/vba-dev-hub" className="hover:text-foreground">GitHub</Link></li>
+                <li><Link href="/about" className="hover:text-foreground">運営者情報</Link></li>
+                <li><Link href="/privacy" className="hover:text-foreground">プライバシーポリシー</Link></li>
+                <li><Link href="/terms" className="hover:text-foreground">利用規約</Link></li>
+                <li><Link href="/contact" className="hover:text-foreground">お問い合わせ</Link></li>
               </ul>
             </div>
           </div>

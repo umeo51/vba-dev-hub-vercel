@@ -70,8 +70,28 @@ export default function PrivacyPage() {
 
           <section>
             <h2 className="text-2xl font-bold mb-4 text-gray-800">6. アクセス解析ツールについて</h2>
+            <h3 className="text-xl font-semibold mb-3 text-gray-800">Google Analytics 4（GA4）の使用</h3>
             <p className="text-gray-700 leading-relaxed">
-              当サイトでは、サイトの利用状況を把握するため、Google Analyticsなどのアクセス解析ツールを使用しています。これらのツールはCookieを使用して情報を収集しますが、個人を特定する情報は含まれません。収集されたデータは、当サイトの改善のために使用されます。
+              当サイトでは、サイトの利用状況を把握し、サービスの改善を行うために、Google LLC（以下「Google」）が提供するアクセス解析ツール「Google Analytics 4」（以下「GA4」）を使用しています。
+            </p>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              GA4は、Cookieおよび類似の技術を使用して、以下のような情報を収集します：
+            </p>
+            <ul className="list-disc list-inside mt-3 text-gray-700 space-y-2 ml-4">
+              <li>ページビュー数、訪問回数、滞在時間</li>
+              <li>使用しているデバイス、ブラウザ、OS</li>
+              <li>アクセス元の地域情報（国、都市レベル）</li>
+              <li>サイト内での行動（クリック、スクロール、フォーム送信など）</li>
+              <li>流入元（検索エンジン、SNS、直接アクセスなど）</li>
+            </ul>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              これらの情報は、個人を特定するものではなく、統計的なデータとして収集・利用されます。収集されたデータは、Googleのプライバシーポリシーに基づいて管理されます。
+            </p>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              Googleのプライバシーポリシーについては、<a href="https://policies.google.com/privacy" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 underline">こちら</a>をご確認ください。
+            </p>
+            <p className="text-gray-700 leading-relaxed mt-3">
+              GA4によるデータ収集を無効にしたい場合は、<a href="https://tools.google.com/dlpage/gaoptout" target="_blank" rel="noopener noreferrer" className="text-purple-600 hover:text-purple-700 underline">Google Analytics オプトアウト アドオン</a>をご利用ください。
             </p>
           </section>
 

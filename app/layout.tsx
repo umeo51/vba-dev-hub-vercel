@@ -25,6 +25,22 @@ export default function RootLayout({
   return (
     <html lang="ja">
       <head>
+        {/* Google Analytics 4 */}
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-EZ15SDWKN1"
+        />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `
+              window.dataLayer = window.dataLayer || [];
+              function gtag(){dataLayer.push(arguments);}
+              gtag('js', new Date());
+              gtag('config', 'G-EZ15SDWKN1');
+            `,
+          }}
+        />
+        
         {/* Google AdSense */}
         <script
           async

@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowUp, ArrowDown, Trash2, Plus, Copy, Check } from 'lucide-react';
+import { ArrowUp, ArrowDown, Trash2, Plus, Copy, Check, BookOpen } from 'lucide-react';
 
 type CodeCategory = 'data_transfer' | 'data_process' | 'file_sheet' | 'loop' | 'basic';
 
@@ -595,6 +595,15 @@ End Sub`);
           <h1 className="text-5xl font-bold mb-4 bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text text-transparent">
             VBAコード自動生成ツール
           </h1>
+          <div className="mb-6">
+            <Link
+              href="/guides/code-generator"
+              className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors"
+            >
+              <BookOpen className="w-4 h-4" />
+              <span>使い方ガイドを見る</span>
+            </Link>
+          </div>
           <p className="text-xl text-gray-600">
             条件を選択するだけで、実用的なVBAコードを自動生成
           </p>

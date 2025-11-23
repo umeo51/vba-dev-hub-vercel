@@ -1,5 +1,6 @@
 'use client';
 
+import Header from '@/components/Header';
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
 
@@ -641,6 +642,7 @@ export default function FunctionsPage() {
   };
 
   return (
+    <Header />
     <div className="min-h-screen bg-gradient-to-br from-purple-50 via-white to-pink-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">

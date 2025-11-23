@@ -1,5 +1,6 @@
 'use client';
 
+import Header from '@/components/Header';
 import React, { useState } from 'react';
 import Link from 'next/link';
 
@@ -130,6 +131,7 @@ export default function UserFormPage() {
   const selectedControlData = controls.find(c => c.id === selectedControl);
 
   return (
+    <Header />
     <div className="min-h-screen bg-gradient-to-br from-indigo-50 via-white to-purple-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">

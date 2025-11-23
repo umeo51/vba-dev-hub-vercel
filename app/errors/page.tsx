@@ -515,7 +515,8 @@ export default function ErrorsPage() {
   };
 
   return (
-    <Header />
+    <>
+      <Header />
     <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
       {/* Header */}
       <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">

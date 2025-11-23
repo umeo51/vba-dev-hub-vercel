@@ -1,6 +1,5 @@
 'use client';
 import Header from '@/components/Header';
-import { GuideFeedback } from '@/components/GuideFeedback';
 
 
 export default function CodeGeneratorGuidePage() {

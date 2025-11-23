@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { GuideFeedback } from '@/components/GuideFeedback';
 
 
 export default function FunctionsGuidePage() {
@@ -375,13 +374,11 @@ export default function FunctionsGuidePage() {
 
           {/* Feedback Section */}
           <div className="mt-12">
-            <GuideFeedback guidePage="functions" />
           </div>
 
 
           {/* Feedback Section */}
           <div className="mt-12">
-            <GuideFeedback guidePage="functions" />
           </div>
 </Link>
           </div>

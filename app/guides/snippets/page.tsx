@@ -1,7 +1,6 @@
 'use client';
 import Image from 'next/image';
 import Link from 'next/link';
-import { GuideFeedback } from '@/components/GuideFeedback';
 
 
 export default function SnippetsGuidePage() {
@@ -415,13 +414,11 @@ export default function SnippetsGuidePage() {
 
           {/* Feedback Section */}
           <div className="mt-12">
-            <GuideFeedback guidePage="snippets" />
           </div>
 
 
           {/* Feedback Section */}
           <div className="mt-12">
-            <GuideFeedback guidePage="snippets" />
           </div>
 </Link>
           </div>

@@ -14,10 +14,24 @@ export default function CodeGeneratorGuidePage() {
         <h1 className="text-4xl font-bold mb-4 text-gray-800">VBAコード自動生成ツールの使い方</h1>
         <p className="text-gray-600 mb-8">条件を選択するだけで、実用的なVBAコードを自動生成できるツールです。</p>
         
+        {/* 目次 */}
+        <nav className="bg-gradient-to-r from-purple-50 to-blue-50 rounded-xl shadow-md p-6 mb-8">
+          <h2 className="text-2xl font-bold mb-4 text-gray-800">📑 目次</h2>
+          <ul className="space-y-2">
+            <li><a href="#overview" className="text-purple-600 hover:text-purple-800 hover:underline">1. ツールの概要</a></li>
+            <li><a href="#modes" className="text-purple-600 hover:text-purple-800 hover:underline">2. 2つのモード</a></li>
+            <li><a href="#basic-usage" className="text-purple-600 hover:text-purple-800 hover:underline">3. 基本的な使い方（単一処理モード）</a></li>
+            <li><a href="#multi-process" className="text-purple-600 hover:text-purple-800 hover:underline">4. 複数処理統合モードの使い方</a></li>
+            <li><a href="#examples" className="text-purple-600 hover:text-purple-800 hover:underline">5. 実用例</a></li>
+            <li><a href="#tips" className="text-purple-600 hover:text-purple-800 hover:underline">6. Tips・よくある質問</a></li>
+            <li><a href="#related" className="text-purple-600 hover:text-purple-800 hover:underline">7. 関連リンク</a></li>
+          </ul>
+        </nav>
+        
         <div className="bg-white rounded-xl shadow-lg p-8 space-y-12">
           
           {/* ツールの概要 */}
-          <section>
+          <section id="overview">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">ツールの概要</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               VBAコード自動生成ツールは、VBA開発でよく使用される処理を、プルダウンやテキスト入力で条件を指定するだけで、
@@ -34,7 +48,7 @@ export default function CodeGeneratorGuidePage() {
           </section>
 
           {/* 2つのモード */}
-          <section>
+          <section id="modes">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">2つのモード</h2>
             <div className="grid md:grid-cols-2 gap-6">
               <div className="border-2 border-purple-200 rounded-lg p-6">
@@ -55,7 +69,7 @@ export default function CodeGeneratorGuidePage() {
           </section>
 
           {/* 基本的な使い方 */}
-          <section>
+          <section id="basic-usage">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">基本的な使い方（単一処理モード）</h2>
             
             {/* ステップ1 */}
@@ -148,7 +162,7 @@ export default function CodeGeneratorGuidePage() {
           </section>
 
           {/* 複数処理統合モードの使い方 */}
-          <section>
+          <section id="multi-process">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">複数処理統合モードの使い方</h2>
             <p className="text-gray-700 leading-relaxed mb-4">
               複数の処理を組み合わせて、1つの統合されたVBAコードを生成できます。
@@ -198,7 +212,7 @@ export default function CodeGeneratorGuidePage() {
           </section>
 
           {/* 実用例 */}
-          <section>
+          <section id="examples">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">実用例</h2>
             
             <div className="space-y-6">
@@ -237,7 +251,7 @@ export default function CodeGeneratorGuidePage() {
           </section>
 
           {/* Tips */}
-          <section>
+          <section id="tips">
             <h2 className="text-3xl font-bold mb-4 text-gray-800">Tips・よくある質問</h2>
             
             <div className="space-y-4">
@@ -277,7 +291,7 @@ export default function CodeGeneratorGuidePage() {
           </section>
 
           {/* 関連リンク */}
-          <section className="border-t pt-8">
+          <section id="related" className="border-t pt-8">
             <h2 className="text-2xl font-semibold mb-4 text-gray-800">関連リンク</h2>
             <div className="grid md:grid-cols-2 gap-4">
               <a href="/tools/generator" className="block p-4 bg-purple-50 rounded-lg hover:bg-purple-100 transition-colors">

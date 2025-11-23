@@ -1,4 +1,6 @@
+'use client';
 import Header from '@/components/Header';
+import { GuideFeedback } from '@/components/GuideFeedback';
 
 export const metadata = {
   title: 'VBAコード自動生成ツールの使い方 - VBA Dev Hub',

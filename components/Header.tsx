@@ -64,6 +64,46 @@ export default function Header() {
              onMouseLeave={(e) => e.currentTarget.style.color = '#e0e0e0'}>
             スニペット
           </Link>
+          <Link href="/errors" style={{
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            transition: 'color 0.2s',
+          }} onMouseEnter={(e) => e.currentTarget.style.color = '#667eea'}
+             onMouseLeave={(e) => e.currentTarget.style.color = '#e0e0e0'}>
+            エラー辞典
+          </Link>
+          <Link href="/references" style={{
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            transition: 'color 0.2s',
+          }} onMouseEnter={(e) => e.currentTarget.style.color = '#667eea'}
+             onMouseLeave={(e) => e.currentTarget.style.color = '#e0e0e0'}>
+            リファレンス
+          </Link>
+          <Link href="/functions" style={{
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            transition: 'color 0.2s',
+          }} onMouseEnter={(e) => e.currentTarget.style.color = '#667eea'}
+             onMouseLeave={(e) => e.currentTarget.style.color = '#e0e0e0'}>
+            関数解説
+          </Link>
+          <Link href="/quiz" style={{
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            transition: 'color 0.2s',
+          }} onMouseEnter={(e) => e.currentTarget.style.color = '#667eea'}
+             onMouseLeave={(e) => e.currentTarget.style.color = '#e0e0e0'}>
+            クイズ
+          </Link>
+          <Link href="/guides" style={{
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            transition: 'color 0.2s',
+          }} onMouseEnter={(e) => e.currentTarget.style.color = '#667eea'}
+             onMouseLeave={(e) => e.currentTarget.style.color = '#e0e0e0'}>
+            ガイド
+          </Link>
         </div>
 
         {/* Mobile Menu Button */}
@@ -114,8 +154,53 @@ export default function Header() {
             color: '#e0e0e0',
             textDecoration: 'none',
             padding: '0.75rem 0',
+            borderBottom: '1px solid #1a1a2e',
           }} onClick={() => setMobileMenuOpen(false)}>
             スニペット
+          </Link>
+          <Link href="/errors" style={{
+            display: 'block',
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            padding: '0.75rem 0',
+            borderBottom: '1px solid #1a1a2e',
+          }} onClick={() => setMobileMenuOpen(false)}>
+            エラー辞典
+          </Link>
+          <Link href="/references" style={{
+            display: 'block',
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            padding: '0.75rem 0',
+            borderBottom: '1px solid #1a1a2e',
+          }} onClick={() => setMobileMenuOpen(false)}>
+            リファレンス
+          </Link>
+          <Link href="/functions" style={{
+            display: 'block',
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            padding: '0.75rem 0',
+            borderBottom: '1px solid #1a1a2e',
+          }} onClick={() => setMobileMenuOpen(false)}>
+            関数解説
+          </Link>
+          <Link href="/quiz" style={{
+            display: 'block',
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            padding: '0.75rem 0',
+            borderBottom: '1px solid #1a1a2e',
+          }} onClick={() => setMobileMenuOpen(false)}>
+            クイズ
+          </Link>
+          <Link href="/guides" style={{
+            display: 'block',
+            color: '#e0e0e0',
+            textDecoration: 'none',
+            padding: '0.75rem 0',
+          }} onClick={() => setMobileMenuOpen(false)}>
+            ガイド
           </Link>
         </div>
       )}

@@ -1,5 +1,7 @@
+'use client';
 import Header from "@/components/Header";
 import Image from "next/image";
+import { GuideFeedback } from '@/components/GuideFeedback';
 
 export default function ErrorDictionaryGuide() {
   return (

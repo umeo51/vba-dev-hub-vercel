@@ -74,25 +74,29 @@ export default function Home() {
           </p>
           
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            <Card>
-              <CardHeader>
-                <Code className="w-10 h-10 text-primary mb-4" />
-                <CardTitle>コード生成・整形ツール</CardTitle>
-                <CardDescription>
-                  VBAの定型的なコードを自動生成したり、既存のコードを解析して可読性を向上させます。正規表現のテストも可能です。
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/tools">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <CardHeader>
+                  <Code className="w-10 h-10 text-primary mb-4" />
+                  <CardTitle>コード生成・整形ツール</CardTitle>
+                  <CardDescription>
+                    VBAの定型的なコードを自動生成したり、既存のコードを解析して可読性を向上させます。正規表現のテストも可能です。
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
-            <Card>
-              <CardHeader>
-                <BookOpen className="w-10 h-10 text-primary mb-4" />
-                <CardTitle>スニペット共有</CardTitle>
-                <CardDescription>
-                  便利なVBAコードの断片を検索・共有できます。他の開発者が投稿したスニペットを参考にして、開発を加速しましょう。
-                </CardDescription>
-              </CardHeader>
-            </Card>
+            <Link href="/snippets">
+              <Card className="hover:shadow-lg transition-shadow cursor-pointer">
+                <CardHeader>
+                  <BookOpen className="w-10 h-10 text-primary mb-4" />
+                  <CardTitle>スニペット共有</CardTitle>
+                  <CardDescription>
+                    便利なVBAコードの断片を検索・共有できます。他の開発者が投稿したスニペットを参考にして、開発を加速しましょう。
+                  </CardDescription>
+                </CardHeader>
+              </Card>
+            </Link>
 
             <Link href="/errors">
               <Card className="hover:shadow-lg transition-shadow cursor-pointer">

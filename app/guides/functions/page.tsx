@@ -3,10 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GuideFeedback } from '@/components/GuideFeedback';
 
-export const metadata = {
-  title: '関数・ステートメント解説の使い方 | VBA Dev Hub',
-  description: 'VBA関数・ステートメント解説の使い方を詳しく解説。構文、パラメータ、サンプルコードで関数の使い方をマスターしましょう。',
-};
 
 export default function FunctionsGuidePage() {
   return (

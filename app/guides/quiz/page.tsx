@@ -3,10 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GuideFeedback } from '@/components/GuideFeedback';
 
-export const metadata = {
-  title: 'VBAクイズの使い方 | VBA Dev Hub',
-  description: 'VBAクイズの使い方を詳しく解説。難易度別の練習問題でVBAの知識を試し、スキルアップを目指しましょう。',
-};
 
 export default function QuizGuidePage() {
   return (

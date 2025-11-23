@@ -3,10 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GuideFeedback } from '@/components/GuideFeedback';
 
-export const metadata = {
-  title: 'スニペット共有の使い方 | VBA Dev Hub',
-  description: 'スニペット共有の使い方を詳しく解説。実用的なVBAコードスニペットを検索・投稿・共有する方法を学びましょう。',
-};
 
 export default function SnippetsGuidePage() {
   return (

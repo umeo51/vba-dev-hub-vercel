@@ -3,10 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GuideFeedback } from '@/components/GuideFeedback';
 
-export const metadata = {
-  title: 'UserFormシミュレーターの使い方 | VBA Dev Hub',
-  description: 'UserFormシミュレーターの使い方を詳しく解説。ビジュアルエディタでUserFormをデザインし、VBAコードを自動生成する方法を学びましょう。',
-};
 
 export default function UserFormGuidePage() {
   return (

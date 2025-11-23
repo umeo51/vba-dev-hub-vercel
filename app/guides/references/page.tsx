@@ -3,10 +3,6 @@ import Image from 'next/image';
 import Link from 'next/link';
 import { GuideFeedback } from '@/components/GuideFeedback';
 
-export const metadata = {
-  title: '逆引きリファレンスの使い方 | VBA Dev Hub',
-  description: 'VBA逆引きリファレンスの使い方を詳しく解説。やりたいことから素早くVBAコードを検索する方法をマスターしましょう。',
-};
 
 export default function ReferencesGuidePage() {
   return (

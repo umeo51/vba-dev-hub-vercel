@@ -3,7 +3,7 @@
 import Header from '@/components/Header';
 import React, { useState } from 'react';
 import Link from 'next/link';
-import { BookOpen , BookOpen} from 'lucide-react';
+import { BookOpen} from 'lucide-react';
 
 interface FormControl {
   id: string;

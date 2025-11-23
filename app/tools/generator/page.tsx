@@ -472,8 +472,7 @@ export default function CodeGeneratorPage() {
   const [copied, setCopied] = useState(false);
   
   // 複数処理管理用の状態
-  const [processList, setProcessList] = useState<ProcessItem[]>([]);
-  const [isMultiMode, setIsMultiMode] = useState(false);
+  const [processList, setProcessList] = useState<ProcessItem[]>([]);  const [isMultiMode, setIsMultiMode] = useState(true);
   const [showProgressOption, setShowProgressOption] = useState(true);
   const [showErrorHandling, setShowErrorHandling] = useState(true);
 
@@ -609,29 +608,7 @@ End Sub`);
           </p>
         </div>
 
-        {/* モード切替 */}
-        <div className="mb-8 flex justify-center gap-4">
-          <button
-            onClick={() => setIsMultiMode(false)}
-            className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-              !isMultiMode
-                ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg'
-                : 'bg-white text-gray-600 border-2 border-gray-300 hover:border-purple-400'
-            }`}
-          >
-            単一処理モード
-          </button>
-          <button
-            onClick={() => setIsMultiMode(true)}
-            className={`px-6 py-3 rounded-lg font-semibold transition-all ${
-              isMultiMode
-                ? 'bg-gradient-to-r from-purple-600 to-blue-600 text-white shadow-lg'
-                : 'bg-white text-gray-600 border-2 border-gray-300 hover:border-purple-400'
-            }`}
-          >
-            複数処理統合モード
-          </button>
-        </div>
+
 
         <div className="grid grid-cols-1 lg:grid-cols-4 gap-8">
           {/* カテゴリ選択 */}
@@ -747,7 +724,7 @@ End Sub`);
                   </div>
                 )}
 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
                   {filteredTemplates.map(template => (
                     <button
                       key={template.id}

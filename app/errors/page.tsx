@@ -3,6 +3,7 @@
 import Header from '@/components/Header';
 import React, { useState, useMemo } from 'react';
 import Link from 'next/link';
+import { BookOpen , BookOpen} from 'lucide-react';
 
 interface VBAError {
   code: number;
@@ -518,31 +519,6 @@ export default function ErrorsPage() {
     <>
       <Header />
       <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-purple-50">
-      {/* Header */}
-      <header className="bg-white/80 backdrop-blur-sm border-b border-gray-200 sticky top-0 z-50">
-        <div className="container mx-auto px-4 py-4">
-          <div className="flex items-center justify-between">
-            <Link href="/" className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-purple-600 bg-clip-text text-transparent">
-              VBA Dev Hub
-            </Link>
-            <nav className="flex gap-6">
-              <Link href="/" className="text-gray-600 hover:text-blue-600 transition-colors">
-                ホーム
-              </Link>
-              <Link href="/tools" className="text-gray-600 hover:text-blue-600 transition-colors">
-                ツール
-              </Link>
-              <Link href="/snippets" className="text-gray-600 hover:text-blue-600 transition-colors">
-                スニペット
-              </Link>
-              <Link href="/errors" className="text-blue-600 font-semibold">
-                エラー辞典
-              </Link>
-            </nav>
-          </div>
-        </div>
-      </header>
-
       {/* Main Content */}
       <main className="container mx-auto px-4 py-12">
         {/* Page Header */}

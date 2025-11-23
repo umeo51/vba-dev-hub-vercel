@@ -4,6 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { BookOpen } from 'lucide-react';
 
 interface Snippet {
   id: number;
@@ -76,6 +77,15 @@ export default function SnippetsPage() {
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-8">
           <h1 className="text-4xl font-bold mb-4">VBAスニペット集</h1>
+        <div className="mb-6">
+          <Link
+            href="/guides/snippets"
+            className="inline-flex items-center gap-2 px-4 py-2 bg-blue-50 text-blue-600 rounded-lg hover:bg-blue-100 transition-colors"
+          >
+            <BookOpen className="w-4 h-4" />
+            <span>使い方ガイドを見る</span>
+          </Link>
+        </div>
           <p className="text-xl text-gray-600">
             実用的なVBAコードスニペットを検索・共有
           </p>

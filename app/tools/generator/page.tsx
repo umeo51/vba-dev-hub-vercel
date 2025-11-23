@@ -4,7 +4,7 @@ export const dynamic = 'force-dynamic';
 
 import { useState } from 'react';
 import Link from 'next/link';
-import { ArrowUp, ArrowDown, Trash2, Plus, Copy, Check } from 'lucide-react';
+import { ArrowUp, ArrowDown, Trash2, Plus, Copy, Check , BookOpen, BookOpen} from 'lucide-react';
 
 type CodeCategory = 'data_transfer' | 'data_process' | 'file_sheet' | 'loop' | 'basic';
 

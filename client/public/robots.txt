@@ -1,0 +1,17 @@
+# VBA Dev Hub - robots.txt
+
+User-agent: *
+Allow: /
+
+# 主要なページ
+Allow: /tools/
+Allow: /snippets/
+Allow: /errors/
+Allow: /references/
+Allow: /quiz/
+
+# サイトマップ
+Sitemap: https://vba-dev-hub.manus.space/sitemap.xml
+
+# クロール頻度の調整（推奨）
+Crawl-delay: 1

@@ -1,0 +1,27 @@
+{
+  "version": "7",
+  "dialect": "mysql",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "5",
+      "when": 1763072855948,
+      "tag": "0000_long_psynapse",
+      "breakpoints": true
+    },
+    {
+      "idx": 1,
+      "version": "5",
+      "when": 1763072919712,
+      "tag": "0001_sparkling_the_fury",
+      "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1763893398875,
+      "tag": "0002_bouncy_madrox",
+      "breakpoints": true
+    }
+  ]
+}
